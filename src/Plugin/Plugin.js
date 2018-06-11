@@ -29,7 +29,9 @@ class Plugin {
     /* eslint-disable global-require */
     for (const item of this._plugins) {
       let plugin;
-      if (item.name.match(/^[.\/]/)) {
+      if (item.plugin) {
+        plugin = item.plugin;
+      } else if (item.name.match(/^[.\/]/)) {
         const pluginPath = path.resolve(item.name);
         plugin = require(pluginPath);
       } else {
