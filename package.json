@@ -30,7 +30,7 @@
     "test": "scripts/test.js $(find test/ -regex '.*.test.js$')",
     "test:ci": "nyc scripts/test.js $(find test/ -regex '.*.test.js$')",
     "lint": "scripts/lint.js",
-    "lint:es": "eslint ./src $(find test/ -regex '.*.test.js$')",
+    "lint:es": "eslint ./src",
     "lint:es:ci": "eslint ./src ./test/src --format junit --output-file ~/reports/eslint.xml",
     "lint:json": "jsonlint ./package.json",
     "lint:yaml": "js-yaml ./circle.yml",
