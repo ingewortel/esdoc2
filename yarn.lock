@@ -257,17 +257,6 @@ babel-core@^6.26.0:
     slash "^1.0.0"
     source-map "^0.5.6"
 
-babel-generator@6.11.4:
-  version "6.11.4"
-  resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.11.4.tgz#14f6933abb20c62666d27e3b7b9f5b9dc0712a9a"
-  dependencies:
-    babel-messages "^6.8.0"
-    babel-runtime "^6.9.0"
-    babel-types "^6.10.2"
-    detect-indent "^3.0.1"
-    lodash "^4.2.0"
-    source-map "^0.5.0"
-
 babel-generator@^6.18.0, babel-generator@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.26.0.tgz#ac1ae20070b79f6e3ca1d3269613053774f20dc5"
@@ -280,6 +269,18 @@ babel-generator@^6.18.0, babel-generator@^6.26.0:
     lodash "^4.17.4"
     source-map "^0.5.6"
     trim-right "^1.0.1"
+
+babel-generator@~6.11.4:
+  version "6.11.4"
+  resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.11.4.tgz#14f6933abb20c62666d27e3b7b9f5b9dc0712a9a"
+  integrity sha1-FPaTOrsgxiZm0n47e59bncBxKpo=
+  dependencies:
+    babel-messages "^6.8.0"
+    babel-runtime "^6.9.0"
+    babel-types "^6.10.2"
+    detect-indent "^3.0.1"
+    lodash "^4.2.0"
+    source-map "^0.5.0"
 
 babel-generator@~6.26.0:
   version "6.26.1"
@@ -809,7 +810,7 @@ cheerio@0.20.0:
   optionalDependencies:
     jsdom "^7.0.2"
 
-cheerio@0.22.0:
+cheerio@0.22.0, cheerio@~0.22.0:
   version "0.22.0"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-0.22.0.tgz#a9baa860a3f9b595a6b81b1a86873121ed3a269e"
   dependencies:
@@ -1173,7 +1174,7 @@ error-ex@^1.2.0:
   dependencies:
     is-arrayish "^0.2.1"
 
-escape-html@1.0.3, escape-html@~1.0.3:
+escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
 
@@ -1216,9 +1217,12 @@ esdoc2-importpath-plugin@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/esdoc2-importpath-plugin/-/esdoc2-importpath-plugin-2.0.0.tgz#e64f19eb69a6cb87bc85f73a5b70166d7bd38217"
 
-esdoc2-integrate-manual-plugin@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/esdoc2-integrate-manual-plugin/-/esdoc2-integrate-manual-plugin-2.0.0.tgz#3a6e7223fb327079f4f8d1f9da1e61619d981d68"
+esdoc2-integrate-manual-plugin@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/esdoc2-integrate-manual-plugin/-/esdoc2-integrate-manual-plugin-2.1.0.tgz#5fc646de2a07852a3f734bd5927f1fb1e50d7bb8"
+  integrity sha512-3mrTAxqAtnDJL9+oynX65Mi9cPD3lTUXTdEMbZpVHZ7nYZCZVDnfWirjDNZZH259x7xfgGTQ0VVY0l5lxzZQaA==
+  dependencies:
+    glob "^7.1.2"
 
 esdoc2-integrate-test-plugin@^2.0.0:
   version "2.0.0"
@@ -1228,37 +1232,40 @@ esdoc2-lint-plugin@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/esdoc2-lint-plugin/-/esdoc2-lint-plugin-2.0.0.tgz#260ae803d7b8b799ed822e3f02bc7349f32577a1"
 
-esdoc2-publish-html-plugin@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/esdoc2-publish-html-plugin/-/esdoc2-publish-html-plugin-2.0.0.tgz#54b8fc08305036f62beb298f700cc4dd76dea844"
+esdoc2-publish-html-plugin@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/esdoc2-publish-html-plugin/-/esdoc2-publish-html-plugin-2.1.2.tgz#c0ab3af99de329e5496dd3a7c3840be8c95a7cfe"
+  integrity sha512-BTR/iPYulUlcODVmTQD4TsTN06mhXW+56liOZEGar8VHIzbMM8PFBFgpvIOgpeh/BmzQZxp7qjJ2I1TqCJ/a1g==
   dependencies:
-    babel-generator "6.11.4"
-    cheerio "0.22.0"
-    escape-html "1.0.3"
-    fs-extra "1.0.0"
-    ice-cap "0.0.4"
-    marked "0.3.6"
-    taffydb "2.7.2"
+    babel-generator "~6.11.4"
+    cheerio "~0.22.0"
+    escape-html "~1.0.3"
+    fs-extra "~1.0.0"
+    ice-cap "~0.0.4"
+    marked "~0.3.9"
+    taffydb "~2.7.2"
 
-esdoc2-standard-plugin@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/esdoc2-standard-plugin/-/esdoc2-standard-plugin-2.0.0.tgz#8dc07ca5b6ffa1d61812541118f825f4725e0473"
+esdoc2-standard-plugin@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/esdoc2-standard-plugin/-/esdoc2-standard-plugin-2.1.2.tgz#9ea68202eda55a87ab54dd85dd73549b7d5a7894"
+  integrity sha512-pi2FxhGz4W6kqS+I9RkeA4nc+LxlMpLAHUT9/Dj4TYLlGZ+9jwS3XXrudCY4KXU+zmjaW6vIi7etXHX5ktiDTg==
   dependencies:
     esdoc2-accessor-plugin "^2.0.0"
     esdoc2-brand-plugin "^2.0.0"
     esdoc2-coverage-plugin "^2.0.0"
     esdoc2-external-ecmascript-plugin "^2.0.0"
-    esdoc2-integrate-manual-plugin "^2.0.0"
+    esdoc2-integrate-manual-plugin "^2.1.0"
     esdoc2-integrate-test-plugin "^2.0.0"
     esdoc2-lint-plugin "^2.0.0"
-    esdoc2-publish-html-plugin "^2.0.0"
-    esdoc2-type-inference-plugin "^2.0.0"
+    esdoc2-publish-html-plugin "^2.1.2"
+    esdoc2-type-inference-plugin "^2.0.1"
     esdoc2-undocumented-identifier-plugin "^2.0.0"
     esdoc2-unexported-identifier-plugin "^2.0.0"
 
-esdoc2-type-inference-plugin@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/esdoc2-type-inference-plugin/-/esdoc2-type-inference-plugin-2.0.0.tgz#9d0cc9a6eda0686447e544f12d06575b39ff45ab"
+esdoc2-type-inference-plugin@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/esdoc2-type-inference-plugin/-/esdoc2-type-inference-plugin-2.0.1.tgz#c3c5e9ded1d793ef8aa64e5bf472a71e0b23a6f9"
+  integrity sha512-YfXpCe8ZWCvTOqml5s8LidnBPd2WM0cMvy6XCk9MYILqvEbDWaAhS+z0Mqu7m2EvuEBckgyZK/EyF8WxedsoRw==
 
 esdoc2-undocumented-identifier-plugin@2.0.0, esdoc2-undocumented-identifier-plugin@^2.0.0:
   version "2.0.0"
@@ -1506,7 +1513,7 @@ form-data@~2.3.1:
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
 
-fs-extra@1.0.0:
+fs-extra@1.0.0, fs-extra@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-1.0.0.tgz#cd3ce5f7e7cb6145883fcae3191e9877f8587950"
   dependencies:
@@ -1803,7 +1810,7 @@ https-proxy-agent@^4.0.0:
     agent-base "5"
     debug "4"
 
-ice-cap@0.0.4, ice-cap@~0.0.4:
+ice-cap@~0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/ice-cap/-/ice-cap-0.0.4.tgz#8a6d31ab4cac8d4b56de4fa946df3352561b6e18"
   dependencies:
@@ -2289,7 +2296,7 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-marked@0.3.6, marked@~0.6.2:
+marked@~0.3.9, marked@~0.6.2:
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.6.3.tgz#79babad78af638ba4d522a9e715cdfdd2429e946"
   integrity sha512-Fqa7eq+UaxfMriqzYLayfqAE40WN03jf+zHjT18/uXNuzjq3TY0XTbrAoPeqSJrAmPz11VuUA+kBPYOhHt9oOQ==
@@ -3287,11 +3294,7 @@ table@^4.0.1:
     slice-ansi "1.0.0"
     string-width "^2.1.1"
 
-taffydb@2.7.2:
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/taffydb/-/taffydb-2.7.2.tgz#7bf8106a5c1a48251b3e3bc0a0e1732489fd0dc8"
-
-taffydb@~2.7.3:
+taffydb@~2.7.2, taffydb@~2.7.3:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/taffydb/-/taffydb-2.7.3.tgz#2ad37169629498fca5bc84243096d3cde0ec3a34"
 
