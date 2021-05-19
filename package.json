@@ -54,7 +54,7 @@
     "ice-cap": "~0.0.4",
     "marked": "~0.7.0",
     "minimist": "~1.2.0",
-    "mkdirp": "~0.5.1",
+    "mkdirp": "~1.0.4",
     "npmlog": "~4.1.2",
     "path-is-inside": "^1.0.2",
     "taffydb": "~2.7.3"
