@@ -2428,9 +2428,9 @@ marked@~0.3.9, marked@~0.6.2:
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.6.3.tgz#79babad78af638ba4d522a9e715cdfdd2429e946"
 
-marked@~0.7.0:
-  version "0.7.0"
-  resolved "https://registry.npmjs.org/marked/-/marked-0.7.0.tgz"
+marked@~2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-2.1.2.tgz#59579e17b02443312caa1509994d5a0b18ae38e1"
 
 math-random@^1.0.1:
   version "1.0.4"
