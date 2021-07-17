@@ -45,7 +45,7 @@
     "babel-generator": "~6.26.0",
     "babel-traverse": "~6.26.0",
     "babylon": "~6.18.0",
-    "big-json": "~1.2.0",
+    "big-json": "~3.1.0",
     "cheerio": "~1.0.0-rc.2",
     "co": "^4.6.0",
     "color-logger": "~0.0.6",
