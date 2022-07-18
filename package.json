@@ -75,7 +75,7 @@
     "esdoc2-importpath-plugin": "2.0.0",
     "esdoc2-standard-plugin": "2.1.2",
     "esdoc2-undocumented-identifier-plugin": "2.0.0",
-    "eslint": "8.16.0",
+    "eslint": "8.20.0",
     "js-yaml": "^4.1.0",
     "jsonlint": "^1.6.2",
     "mocha": "^8.4.0",
