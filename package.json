@@ -50,7 +50,7 @@
     "co": "^4.6.0",
     "color-logger": "~0.0.6",
     "escape-html": "~1.0.3",
-    "fs-extra": "~10.0.0",
+    "fs-extra": "~11.1.0",
     "ice-cap": "~0.0.4",
     "marked": "~4.0.16",
     "minimist": "~1.2.0",
